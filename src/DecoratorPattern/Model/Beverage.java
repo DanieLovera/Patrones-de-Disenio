@@ -34,6 +34,6 @@ public abstract class Beverage {
 
     @Override
     public String toString() {
-        return "Beverage: " + description + "\nCost = " + cost + " $";
+        return "Beverage: " + getDescription () + "\nCost = " + cost () + " $";
     }
 }

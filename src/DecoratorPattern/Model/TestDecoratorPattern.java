@@ -12,5 +12,11 @@ public class TestDecoratorPattern {
 
         Beverage espressoMochaMocha = new Mocha(espressoMocha);
         System.out.println(espressoMochaMocha);
+
+        Beverage darkRoastCoffe = new DarkRoast();
+        darkRoastCoffe = new Mocha(darkRoastCoffe);
+        darkRoastCoffe = new Mocha(darkRoastCoffe);
+        darkRoastCoffe = new Whip(darkRoastCoffe);
+        System.out.println(darkRoastCoffe);
     }
 }

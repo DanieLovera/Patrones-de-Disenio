@@ -1,19 +1,19 @@
 package DecoratorPattern.Model;
 
-public class Mocha extends CondimentDecorator {
+public class Whip extends CondimentDecorator{
 
-    public static final String DESCRIPTION = "Mocha";
-    public static final float COST = 0.20f;
+    public static final String DESCRIPTION = "Whip";
+    public static final float COST = 0.10f;
 
-    public Mocha () {
+    public Whip () {
         super ();
     }
 
-    public Mocha (Beverage beverage) {
+    public Whip (Beverage beverage) {
         super (beverage,COST,DESCRIPTION);
     }
 
-    public Mocha (Beverage beverage, float additional_cost) {
+    public Whip (Beverage beverage, float additional_cost) {
         super(beverage,additional_cost,DESCRIPTION);
     }
 

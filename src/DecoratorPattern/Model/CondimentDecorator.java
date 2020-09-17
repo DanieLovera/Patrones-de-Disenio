@@ -17,9 +17,13 @@ public abstract class CondimentDecorator extends Beverage {
 
     public CondimentDecorator (Beverage beverage
             , float additionalCost, String description) {
-        super (beverage.cost() + additionalCost
+        super (additionalCost
                 , beverage.getDescription() + " " + description);
 
         this.beverage = beverage;
+    }
+
+    public Beverage getBeverage() {
+        return beverage;
     }
 }
